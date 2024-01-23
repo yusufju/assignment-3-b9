@@ -12,6 +12,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap"
         rel="stylesheet">
+    <!-- font awesome -->
+    <script src="https://kit.fontawesome.com/3583d0f600.js" crossorigin="anonymous"></script>
     <!-- script -->
     <script>
         tailwind.config = {
@@ -29,6 +31,9 @@
         .font-manrope {
             font-family: 'Manrope', sans-serif;
         }
+        .hr-line{
+            border-top: 1px dashed #13131833;
+        }
     </style>
 
 </head>
@@ -38,35 +43,188 @@
         <div>
             <div class="carousel w-full">
                 <div id="slide1" class="carousel-item relative w-full">
-                  <img src="./Images/1.png" class="w-full" />
-                  <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-                    <a href="#slide4" class="btn btn-circle">❮</a> 
-                    <a href="#slide2" class="btn btn-circle">❯</a>
-                  </div>
-                </div> 
-                <div id="slide2" class="carousel-item relative w-full">
-                  <img src="./Images/2.png" class="w-full" />
-                  <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-                    <a href="#slide1" class="btn btn-circle">❮</a> 
-                    <a href="#slide3" class="btn btn-circle">❯</a>
-                  </div>
-                </div> 
-                <div id="slide3" class="carousel-item relative w-full">
-                  <img src="./Images/3.png" class="w-full" />
-                  <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-                    <a href="#slide2" class="btn btn-circle">❮</a> 
-                    <a href="#slide1" class="btn btn-circle">❯</a>
-                  </div>
-                </div> 
+                    <img src="./Images/1.png" class="w-full" />
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                        <a href="#slide4" class="btn btn-circle bg-black text-white border-none">❮</a>
+                        <a href="#slide2" class="btn btn-circle  bg-black text-white border-none">❯</a>
+                    </div>
                 </div>
+                <div id="slide2" class="carousel-item relative w-full">
+                    <img src="./Images/2.png" class="w-full" />
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                        <a href="#slide1" class="btn btn-circle  bg-black text-white border-none">❮</a>
+                        <a href="#slide3" class="btn btn-circle  bg-black text-white border-none">❯</a>
+                    </div>
+                </div>
+                <div id="slide3" class="carousel-item relative w-full">
+                    <img src="./Images/3.png" class="w-full" />
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                        <a href="#slide2" class="btn btn-circle  bg-black text-white border-none">❮</a>
+                        <a href="#slide1" class="btn btn-circle  bg-black text-white border-none">❯</a>
+                    </div>
+                </div>
+            </div>
+            <div class="absolute bottom-48 right-72 ">
+                <div class="mh-40 w-[566px] bg-[#131318] p-8">
+                    <h3 class="text-[#FFF] text-2xl font-extrabold">Meet all the heroes from the field</h3>
+                    <p class="text-[#FFFFFF99] mt-4">Dit amet consectetur. Condimentum dignissim adipiscing aliquam
+                        turpis placerat dolor. Purus urna in sit nullam proin. </p>
+                </div>
+            </div>
         </div>
-        <div class="h-40 w-[566px] mx-auto bg-[#131318] p-8">
-            <h3 class="text-[#FFF] text-2xl font-extrabold">Meet all the heroes from the field</h3>
-            <p class="text-[#FFFFFF99] mt-4">Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat dolor. Purus urna in sit nullam proin. </p>
+        <div class="text-center">
+            <h3 class="text-4xl font-extrabold mb-6 text-[#131318]">Professional Hockeys Club</h3>
+            <p class="text-[#0D0D12] lg:max-w-[607px] mx-auto">Dit amet consectetur. Condimentum dignissim adipiscing
+                aliquam turpis placerat dolor. Purus urna in sit nullam proin. </p>
         </div>
-
     </header>
-    <main>
+    <main class="container mx-auto px-2 lg:px-32 my-8">
+        <!-- Progress bar section -->
+        <section>
+            <div class="px-28 mx-auto text-center flex justify-around my-24">
+                <div>
+                    <div class="radial-progress text-red-600" style="--value:87;" role="progressbar">87%</div>
+                </div>
+
+                <div class="radial-progress text-primary" style="--value:95;" role="progressbar">95%</div>
+                <div class="radial-progress text-primary" style="--value:90;" role="progressbar">90%</div>
+                <div class="radial-progress text-primary" style="--value:80;" role="progressbar">80%</div>
+            </div>
+        </section>
+        <!-- Program Section -->
+        <Section>
+            <hr class="hr-line">
+            <div class="text-center my-8">
+                <h3 class="text-4xl font-extrabold mb-6 text-[#131318]">Program Sections</h3>
+                <p class="text-[#0D0D12] lg:max-w-[607px] mx-auto">Dit amet consectetur. Condimentum dignissim
+                    adipiscing aliquam turpis placerat dolor. Purus urna in sit nullam proin. </p>
+            </div>
+            <hr class="hr-line mb-24">
+        </Section>
+        
+        <!-- Program Photos -->
+        <section>
+            <div>
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 rounded-2xl my-4">
+                    <div
+                        class="w-full bg-[linear-gradient(45deg,rgba(0,0,0,0.4),rgba(0,0,0,0.1)),url(./Images/2.png)] h-80 bg-no-repeat mx-auto p-10 pt-24 rounded-2xl">
+                        <div>
+                            <div class="text-white">
+                                <h3 class="text-3xl font-extrabold">Junior Program</h3>
+                                <p class="mt-4 mb-6 font-medium">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Expedita delectus eius impedit esse odit doloremque.</p>
+                                <div>
+                                    <button class="btn btn-secondary bg-[#FF4240] border-[#FF4240]">Register Now!</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div
+                        class="bg-[linear-gradient(45deg,rgba(0,0,0,0.4),rgba(0,0,0,0.1)),url(./Images/3.png)] h-80 w-full bg-no-repeat mx-auto p-10 pt-24 rounded-2xl">
+                        <div>
+                            <div class="text-white">
+                                <h3 class="text-3xl font-extrabold">Teenager Program</h3>
+                                <p class="mt-4 mb-6 font-medium">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti sit aspernatur aut ipsam? Itaque in temporibus iure, aliquam eum ad.</p>
+                                <div>
+                                    <button class="btn btn-secondary bg-[#FF4240] border-[#FF4240]">Register Now!</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div
+                        class="col-span-2 bg-[linear-gradient(45deg,rgba(0,0,0,0.4),rgba(0,0,0,0.1)),url(./Images/4.png)] w-full h-96 bg-no-repeat mx-auto pl-10 pr-96 pt-44 rounded-2xl">
+                        <div>
+                            <div class="text-white">
+                                <h3 class="text-3xl font-extrabold">Professional Program</h3>
+                                <p class="mt-4 mb-6 font-medium">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Expedita delectus eius impedit esse odit doloremque.</p>
+                                <div>
+                                    <button class="btn btn-secondary bg-[#FF4240] border-[#FF4240]">Register Now!</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div>
+
+            </div>
+            <div>
+
+            </div>
+        </section>
+        <!-- new product -->
+        <Section>
+            <hr class="mt-24 hr-line">
+            <div class="text-center my-8">
+                <h3 class="text-4xl font-extrabold mb-6 text-[#131318]">Our New Products</h3>
+                <p class="text-[#0D0D12] lg:max-w-[607px] mx-auto">Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat dolor. Purus urna in sit nullam proin. </p>
+            </div>
+            <hr class="hr-line mb-24">
+        </Section>
+            <div>
+                <div class="hero pl-6 py-6 border-[1px] border-[#DD13121] rounded-2xl">
+                    <div class="hero-content flex-col lg:flex-row">
+                      <img src="./Images/5.png" class="max-w-sm rounded-lg shadow-2xl" />
+                      <div>
+                        <div class="flex justify-start gap-4">
+                            <div>
+                                <div class="flex">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                        <g clip-path="url(#clip0_6_192)">
+                                          <path d="M12 17.7498L5.82799 20.9948L7.00699 14.1218L2.00699 9.25477L8.90699 8.25477L11.993 2.00177L15.079 8.25477L21.979 9.25477L16.979 14.1218L18.158 20.9948L12 17.7498Z" fill="#F99808" stroke="#F99808" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </g>
+                                        <defs>
+                                          <clipPath id="clip0_6_192">
+                                            <rect width="24" height="24" fill="white" transform="translate(0 -0.000244141)"/>
+                                          </clipPath>
+                                        </defs>
+                                      </svg>
+                                    <p class="text-[#13131880] ml-1 font-manrope font-medium">5.0</p>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="flex ">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                        <g clip-path="url(#clip0_6_207)">
+                                          <path d="M10 11.9998C10 12.5302 10.2107 13.0389 10.5858 13.414C10.9609 13.789 11.4696 13.9998 12 13.9998C12.5304 13.9998 13.0391 13.789 13.4142 13.414C13.7893 13.0389 14 12.5302 14 11.9998C14 11.4693 13.7893 10.9606 13.4142 10.5855C13.0391 10.2105 12.5304 9.99976 12 9.99976C11.4696 9.99976 10.9609 10.2105 10.5858 10.5855C10.2107 10.9606 10 11.4693 10 11.9998Z" stroke="#131318" stroke-opacity="0.5" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                          <path d="M21 11.9998C18.6 15.9998 15.6 17.9998 12 17.9998C8.4 17.9998 5.4 15.9998 3 11.9998C5.4 7.99976 8.4 5.99976 12 5.99976C15.6 5.99976 18.6 7.99976 21 11.9998Z" stroke="#131318" stroke-opacity="0.5" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </g>
+                                        <defs>
+                                          <clipPath id="clip0_6_207">
+                                            <rect width="24" height="24" fill="white" transform="translate(0 -0.000244141)"/>
+                                          </clipPath>
+                                        </defs>
+                                      </svg>
+                                      <p class="text-[#13131880] ml-1 font-manrope font-medium">20</p>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="flex">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                        <g clip-path="url(#clip0_6_211)">
+                                          <path d="M19.5 12.5717L12 19.9997L4.5 12.5717C4.0053 12.0904 3.61564 11.5118 3.35554 10.8724C3.09545 10.233 2.97056 9.5467 2.98873 8.85668C3.00691 8.16667 3.16776 7.48789 3.46115 6.86309C3.75455 6.23829 4.17413 5.681 4.69348 5.22633C5.21283 4.77165 5.8207 4.42944 6.47881 4.22123C7.13691 4.01302 7.831 3.94333 8.51736 4.01655C9.20373 4.08977 9.8675 4.30431 10.4669 4.64666C11.0662 4.98901 11.5882 5.45175 12 6.00575C12.4135 5.45577 12.9361 4.99707 13.5351 4.65835C14.1341 4.31964 14.7965 4.1082 15.4809 4.03727C16.1654 3.96634 16.8571 4.03745 17.5128 4.24614C18.1685 4.45484 18.774 4.79662 19.2915 5.25011C19.8091 5.7036 20.2274 6.25903 20.5204 6.88164C20.8134 7.50425 20.9747 8.18063 20.9943 8.86846C21.0139 9.55628 20.8913 10.2407 20.6341 10.879C20.377 11.5173 19.9909 12.0956 19.5 12.5777" stroke="#131318" stroke-opacity="0.5" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </g>
+                                        <defs>
+                                          <clipPath id="clip0_6_211">
+                                            <rect width="24" height="24" fill="white" transform="translate(0 -0.000244141)"/>
+                                          </clipPath>
+                                        </defs>
+                                      </svg>
+                                    <p class="text-[#13131880] ml-1 font-manrope font-medium">200</p>
+                                </div>
+                            </div>
+                        </div>
+                        <h1 class="text-xl font-extrabold text-[#131318]">World Cup Flags Football</h1>
+                        <p class="py-6">Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi.</p>
+                        <button class="btn btn-primary">Get Started</button>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+        <section>
+
+        </section>
 
     </main>
     <footer>
